@@ -15,7 +15,7 @@ struct Node {
 };
 
 struct Node * instertAtBegin(struct Node *head, int data) {
-    struct node *ptr = (struct Node *) malloc(sizeof(struct Node));
+    struct Node *ptr = (struct Node *) malloc(sizeof(struct Node));
     
     ptr->next = head;
     head = ptr;
@@ -24,10 +24,10 @@ struct Node * instertAtBegin(struct Node *head, int data) {
 }
 
 struct Node * instertInBetween(struct Node *head, int data, int index) {
-    struct node *ptr = (struct Node *) malloc(sizeof(struct Node));
+    struct Node *ptr = (struct Node *) malloc(sizeof(struct Node));
 
     int i = 0;
-    struct node *p = head; //temporary iterator for linked list
+    struct Node *p = head; //temporary iterator for linked list
     while (i != index-1) {  //running till we get prev node index
         p = p->next;
         i++;
@@ -41,9 +41,9 @@ struct Node * instertInBetween(struct Node *head, int data, int index) {
 }
 
 struct Node * instertAtEnd(struct Node *head, int data) {
-    struct node *ptr = (struct Node *) malloc(sizeof(struct Node));
+    struct Node *ptr = (struct Node *) malloc(sizeof(struct Node));
 
-    struct node *p = head; //temporary iterator for linked list
+    struct Node *p = head; //temporary iterator for linked list
     while (p->next != NULL) {  //running till we get last node index
         p = p->next;
     }
@@ -56,7 +56,7 @@ struct Node * instertAtEnd(struct Node *head, int data) {
 }
 
 struct Node * instertAfterNode(struct Node *prevNode, int data) {
-    struct node *ptr = (struct Node *) malloc(sizeof(struct Node));
+    struct Node *ptr = (struct Node *) malloc(sizeof(struct Node));
 
     ptr->data = data;
     ptr->next = prevNode->next;
@@ -81,7 +81,6 @@ int main() {
     
 
     // Calling Functions
-    printf("Linked List Before Insertion\n");
     head = insertAtFirst(head, 56);
     head = insertAtIndex(head, 56, 1);
     head = insertAtEnd(head, 56);
