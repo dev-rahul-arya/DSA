@@ -19,8 +19,9 @@
 - IsEmpty
 - IsFull
 
-__Note:__   1. Queue is not limited to counters
-            2. Queue can be implemented by
-                - Arrays
-                - Linked List
-                - Other ADTs
+__Note:__ 
+1. Queue is not limited to counters
+2. Queue can be implemented by
+    - Arrays
+    - Linked List
+    - Other ADTs

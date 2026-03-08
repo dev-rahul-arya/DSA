@@ -1,8 +1,8 @@
-# CIRCULAR QUEUE
+# CIRCULAR QUEUE USING ARRAY
 
 ![circular-queue-visualization.png](circular-queue-visualization.png)
 
-Main Condition: `(i+1) % size`
+__Main Condition:__ `(i+1) % size`
 
 ## FULL CODE
 
@@ -18,7 +18,7 @@ struct Queue {
 };
 
 int isFull(struct Queue *q) {
-    if ( (q->r+1)%q->size == q->f )) {
+    if ( (q->rear+1)%q->size == q->front )) {
         return 1;
     }
 
@@ -34,24 +34,24 @@ int isEmpty(struct Queue *q) {
 }
 
 void enqueue(struct Queue *q, int val) {
-    if( (q->r+1)%q->size == q->f ) {
+    if( (q->rear+1)%q->size == q->front ) {
         printf("Queue Overflow");
     }
     else {
-        q->r = (q->r+1)%q->size;
-        q->arr[q->r] = val;
+        q->rear = (q->rear+1)%q->size;
+        q->arr[q->rear] = val;
     }
 }
 
 int dequeue(struct Queue *q) {
-    if( q->r == q->f ) {
+    if( q->rear == q->front ) {
         printf("Queue Underflow");
     }
     else {
-        q->f = (q->f+1)%q->size;
+        q->front = (q->front+1)%q->size;
     }
 
-    return q->arr[a->f];
+    return q->arr[a->front];
 }
 
 int main() {

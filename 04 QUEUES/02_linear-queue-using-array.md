@@ -1,15 +1,17 @@
-## IMPLEMENTATION PLAN
+# LINEAR QUEUE USING ARRAY
 
 ![queue-implementation.png](queue-implementation.png)
 
-Insert: Increment `Rear` and insert at `Rear`.
-Remove: Increment `Front` and remove from `Front`.
+## IMPLEMENTATION PLAN
 
-First Element: `Front + 1`
-Last Element: `Rear`
+__Insert:__ Increment `Rear` and insert at `Rear`.\
+__Remove:__ Increment `Front` and remove from `Front`.
 
-Queue Empty: `Front == Rear`
-Queue Full: `Rear = Size - 1`
+__First Element:__ `Front + 1`\
+__Last Element:__ `Rear`
+
+__Queue Empty:__ `Front == Rear`\
+__Queue Full:__ `Rear = Size - 1`
 
 ## FULL CODE
 

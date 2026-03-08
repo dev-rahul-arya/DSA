@@ -9,7 +9,7 @@ Notations to write an expression.
 - Postfix: <operand> <operand> <operator>
     - `ab+`, `xy-`, `pq*`, `mn/`
 
-Q. Why?
+Q. Why?\
 Sol. Postfix is easy for evaluation by machine because of operator precendence.
 
 - Infix: (A*(B+C)*D)
